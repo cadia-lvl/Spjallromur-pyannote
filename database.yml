@@ -8,21 +8,22 @@ Protocols:
       words_and_vocal_sounds:
         train:
             uri: lists/train.lst
-            annotation: rttms/train.rttm
+            annotation: rttms/all.rttm
         development:
             uri: lists/dev.lst
-            annotation: rttms/train.rttm
+            annotation: rttms/all.rttm
         test:
             uri: lists/test.lst
-            annotation: rttms/train.rttm
-        gold:
+            annotation: rttms/all.rttm
+      gold:
+        test:
             uri: lists/gold.lst
-            annotation: rttms/train.rttm
+            annotation: rttms/gold.rttm
   Spjallromur-wip:
     SpeakerDiarization:
       words_and_vocal_sounds:
         gold:
             uri: lists/gold.lst
-            annotation: rttms/train.rttm
+            annotation: rttms/gold.rttm
             transcription: ctms/{uri}.ctm
 
