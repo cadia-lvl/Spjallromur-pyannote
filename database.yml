@@ -1,0 +1,28 @@
+Databases:
+  Spjallromur: spjallromur/data/full_conversations/**/{uri}.wav
+  Spjallromur-merged: spjallromur/merged/speaker_ab_convo_{uri}.wav
+
+Protocols:
+  Spjallromur:
+    SpeakerDiarization:
+      words_and_vocal_sounds:
+        train:
+            uri: lists/train.lst
+            annotation: rttms/train.rttm
+        development:
+            uri: lists/dev.lst
+            annotation: rttms/train.rttm
+        test:
+            uri: lists/test.lst
+            annotation: rttms/train.rttm
+        gold:
+            uri: lists/gold.lst
+            annotation: rttms/train.rttm
+  Spjallromur-wip:
+    SpeakerDiarization:
+      words_and_vocal_sounds:
+        gold:
+            uri: lists/gold.lst
+            annotation: rttms/train.rttm
+            transcription: ctms/{uri}.ctm
+
